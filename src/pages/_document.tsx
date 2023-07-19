@@ -17,17 +17,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="application-name" content="Codelabs Next PWA" />
+          <meta name="application-name" content="F168" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
-          <meta name="apple-mobile-web-app-title" content="Codelabs Next PWA" />
-          <meta
-            name="description"
-            content="Boilerplate next pwa by hellotoms"
-          />
+          <meta name="apple-mobile-web-app-title" content="F168" />
+          <meta name="description" content="Fasting app for smart people" />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="msapplication-TileColor" content="#2B5797" />
@@ -72,13 +69,13 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="PWA App" />
           <meta
             name="twitter:description"
-            content="Boilerplate next pwa by hellotoms"
+            content="Fasting app for smart people"
           />
           <meta
             name="twitter:image"
             content="http://localhost:3000/icon-192x192.png"
           />
-          <meta name="twitter:creator" content="@Tomibudis" />
+          <meta name="twitter:creator" content="@slepzs" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="PWA App" />
           <meta
