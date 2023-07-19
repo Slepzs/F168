@@ -36,7 +36,7 @@ npm ^7.10.0
 run script
 
 ```
-npx tomibudis/codelabs-next-pwa {appName}
+npx tomibudis/F168 {appName}
 ```
 
 When init project successfully. follow the following command script to start
