@@ -5,7 +5,7 @@ const Testpage: React.FC = () => {
   return (
     <>
       <h1 className="text-3xl font-bold underline">Testpage</h1>
-      <p>Test test </p>
+      <p>My Test page </p>
       <Link href="/">xxx</Link>
     </>
   );
