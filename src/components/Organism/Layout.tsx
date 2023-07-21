@@ -1,7 +1,6 @@
 import { memo } from "react";
 import Menu from "./Menu/Menu";
 import Header from "./Header/Header";
-import MobileBuffer from "~components/Atoms/MobileBuffer";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -13,6 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="max-w-3xl h-full w-full mx-auto">
         <div className="h-full">
           <Header />
+
           <div className="px-5">{children}</div>
           <Menu />
         </div>

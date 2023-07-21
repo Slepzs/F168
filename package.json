@@ -45,7 +45,8 @@
     "sass": "^1.49.7",
     "styled-components": "^5.3.3",
     "styled-jsx": "^5.1.2",
-    "webpack": "^5.88.2"
+    "webpack": "^5.88.2",
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",

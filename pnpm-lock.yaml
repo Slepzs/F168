@@ -38,6 +38,7 @@ specifiers:
   tailwindcss: ^3.3.2
   typescript: 4.5.5
   webpack: ^5.88.2
+  zustand: ^4.3.9
 
 dependencies:
   '@babel/core': 7.22.9
@@ -58,6 +59,7 @@ dependencies:
   styled-components: 5.3.11_gl4gusewacvcrpjlv4dzq545vi
   styled-jsx: 5.1.2_54vsopisd4sxme2ltbo2mwp3ci
   webpack: 5.88.2
+  zustand: 4.3.9_react@18.2.0
 
 devDependencies:
   '@commitlint/cli': 16.3.0
@@ -6542,4 +6544,20 @@ packages:
 
   /zod/3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
+  /zustand/4.3.9_react@18.2.0:
+    resolution: {integrity: sha512-Tat5r8jOMG1Vcsj8uldMyqYKC5IZvQif8zetmLHs9WoZlntTHmIoNM8TpLRY31ExncuUvUOXehd0kvahkuHjDw==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
