@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 type Props = {
-  times: string;
+  times?: string;
 };
 
 const Times: React.FC<Props> = ({ times }) => {

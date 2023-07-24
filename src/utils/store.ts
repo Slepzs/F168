@@ -4,30 +4,28 @@ import { useState, useEffect } from "react";
 import { luxon } from "luxon";
 
 interface TimerState {
-  time: Date | luxon.DateTime | null;
-  setTime: () => void;
-  timerActive: boolean;
-  timesStore: string[];
-  addToTimesStore: (time: string) => void;
-  changeTimerStatus: () => void;
+  timer: number;
+  intervalId?: NodeJS.Timeout;
+  startTimer: () => void;
+  stopTimer: () => void;
 }
 
-export const useTimeStore = create<TimerState>()(
-  persist(
-    (set, get) => ({
-      time: null,
-      timerActive: false,
-      timesStore: [],
-      setTime: () => set({ time: new Date() }),
-      changeTimerStatus: () => set({ timerActive: !get().timerActive }),
-      addToTimesStore: (time: string) =>
-        set({ timesStore: [...get().timesStore, time] }),
-    }),
-    {
-      name: "time-storage", // name of item in the storage (must be unique)
-    }
-  )
-);
+export const useTimerStore = create<TimerState>((set) => ({
+  timer: 0,
+  startTimer: () => {
+    // Start the timer and update it every second
+    const intervalId = setInterval(() => {
+      set((state) => ({ timer: state.timer + 1 }));
+    }, 1000);
+    // Store the interval ID in the state so you can clear it later if needed
+    set({ intervalId });
+  },
+  stopTimer: () => {
+    // Clear the interval when you want to stop the timer
+    const { intervalId } = useTimerStore.getState();
+    clearInterval(intervalId);
+  },
+}));
 
 export const useStore = <T, F>(
   store: (callback: (state: T) => unknown) => unknown,

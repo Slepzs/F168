@@ -3,23 +3,23 @@ import gsap from "gsap";
 
 type Props = {};
 
-const WatchFace: React.FC<Props> = ({}) => {
+const WatchFace: React.FC<Props> = () => {
   const dotAnimation = () => {
     const path = document.querySelector<SVGPathElement>(".watchline");
     const circle = document.querySelector<SVGCircleElement>(".circle");
 
-    const val = { distance: 0 }; // to be calculated
+    const val = { distance: 0 }; // ToDo:: Calculate this value based on time spent in fasting.
     console.log(path.getTotalLength());
     // Create a tween
     gsap.to(val, {
       // Animate from distance 0 to the total distance
       distance: path.getTotalLength(),
       // Make the animation lasts 5 seconds
-      duration: 1,
+      duration: 5,
       // Function call on each frame of the animation
       onUpdate: () => {
         // Query a point at the new distance value
-        const point = path.getPointAtLength(val.distance);
+        const point = path.getPointAtLength(100);
         // Update the circle coordinates
         circle.setAttribute("cx", point.x.toString());
         circle.setAttribute("cy", point.y.toString());

@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        logo: ["var(--font-satisfy)"],
+      },
       colors: {
         primary: "#1E1E1E",
         secondary: "#2F2F2F",
