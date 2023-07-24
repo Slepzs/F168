@@ -12,10 +12,15 @@ module.exports = {
         secondary: "#2F2F2F",
         tertiary: "#3F3F3F",
         quaternary: "#4F4F4F",
+        black: "#0e0e0e",
         white: {
           DEFAULT: "#FFFFFF",
           faded: "#FFFFFF80",
         },
+      },
+      dropShadow: {
+        black: "2px 2px 2px rgba(30, 30, 30, 0.25)",
+        white: "0px 4px 4px rgba(255, 255, 255, 0.5)",
       },
       fontSize: {
         h1: "2.5rem",

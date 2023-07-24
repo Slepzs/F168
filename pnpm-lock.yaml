@@ -24,6 +24,7 @@ specifiers:
   eslint-plugin-testing-library: ^5.0.5
   esm: ^3.2.25
   framer-motion: ^10.13.0
+  gsap: ^3.12.2
   istanbul-badges-readme: ^1.8.1
   lint-staged: ^12.3.3
   lodash: ^4.17.21
@@ -52,6 +53,7 @@ dependencies:
   dayjs: 1.11.9
   esm: 3.2.25
   framer-motion: 10.13.0_biqbaboplfbrettd7655fr4n2y
+  gsap: 3.12.2
   lodash: 4.17.21
   luxon: 3.3.0
   next: 13.4.10_3kjxpy2hkbg77aunxgtaav56nm
@@ -3913,6 +3915,10 @@ packages:
   /graphemer/1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
+
+  /gsap/3.12.2:
+    resolution: {integrity: sha512-EkYnpG8qHgYBFAwsgsGEqvT1WUidX0tt/ijepx7z8EUJHElykg91RvW1XbkT59T0gZzzszOpjQv7SE41XuIXyQ==}
+    dev: false
 
   /hard-rejection/2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
